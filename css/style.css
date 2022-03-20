@@ -1,0 +1,217 @@
+/*Theme Color : #ffdd00 #85aec1 */
+/*Defaults*/
+@font-face {font-family: robo-l;src: url(../fonts/Roboto-Light.ttf);}
+@font-face {font-family: robo-t;src: url(../fonts/Roboto-Thin.ttf);}
+@font-face {font-family: robo-r;src: url(../fonts/Roboto-Regular.ttf);}
+@font-face {font-family: mons-b;src: url(../fonts/Mons-Bold.ttf);}
+@font-face {font-family: rock-r;src: url(../fonts/Rockwell-Regular.ttf);}
+
+
+
+.clear{clear:both;}
+:root{
+	--X_Y:#85aec1;
+  --main_yellow:#ffdd00;
+	--dark_grey:#b3b3b3;
+}
+
+
+::selection {
+    color: #fff;
+    background: red;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  height:0px;
+  background: #070707;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background:#555;
+  border-radius: 5px;
+  transition: background 1s ease
+}
+
+::-webkit-scrollbar-thumb:hover{background: #ccc;}
+.X ::-webkit-scrollbar-thumb{background: #ccc}
+.X ::-webkit-scrollbar{width:4px;background:#343a40}
+
+
+
+
+
+.type-wrap::-webkit-scrollbar-thumb:hover{background: #ccc;}
+.type-wrap::-webkit-scrollbar-thumb{background: #ccc}
+.type-wrap::-webkit-scrollbar{width:4px;background:#00000000}
+
+a:hover{text-decoration: none;}
+p{font-family: robo-t}
+body{background-color:#070707}
+ul{list-style: none;}
+/*-------------X-------------*/
+
+
+
+
+/*-------------OPENING-------------*/
+.overlay{
+  z-index: 999999999999;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:#fff;
+  top: 0%;
+  position: fixed;
+}
+.overlay h1{
+  position: absolute;;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: robo-r;
+  letter-spacing: 5px;
+  font-size:25px;
+  color: #000;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------!!MAİNPAGE!!-------------*/
+.mainpage .main{height: 100vh;background-image: url(../images/mainbg.jpg);filter: brightness(0.6);background-position: center;background-repeat: no-repeat;background-position:center;background-size: cover;}
+.main{font-family: robo-t;}
+.main .navbar-brand{font-size: 40px ; transition: 1s ease}
+
+.main .nav-item a:before{
+  content: "";
+  width: 2px;
+  display: block;
+  position: absolute;  
+  color: #fff;
+  height: 2px;
+}
+
+
+
+/*MENU SCROLL TRANSITION EFFECTS*/
+#nav{transition: 1s ease;}
+.navstyled{background: #000000d9 ;padding-top: 0;padding-bottom: 0;}
+.navstyled .navbar-brand{font-size: 30px;}
+/*End*/
+
+
+
+
+
+
+.nav-item{position: relative;}
+.main > li > a:before{
+  content: '';
+  margin-top: 4px;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+
+.main > li:hover > a:before{
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.main .navbar-brand{transition: }.main .navbar-toggler{border:0px;padding: 0}
+.main .navbar-toggler:focus{outline:none;}
+
+.main .social-icons{position: absolute;top: 50%;transform: translateY(-50%);left : 2em;}
+.main .social-icons ul{padding:0;}
+.main .social-icons .social-item{margin:8px 0;text-align: center;font-size: 20px;}
+.main .social-icons .social-item a{color:#fff;transition: 0.7s ease filter}
+.main .social-icons .social-item a:hover{filter: drop-shadow(0 0 0.50rem #fff);}
+
+.main .side-strip{position: absolute;top: 50%;transform: translateY(-50%);right: -4em;transform: rotate(90deg);color: #fff;
+letter-spacing: 4px;}
+
+
+/*-------------!!COLLECTİONS!!-------------*/
+
+.collections .type1,.collections .type2{height: 400px;margin-bottom: 2em}
+.collections .art{position: relative;height: 100%}
+.collections .art .photo{position: relative;height: 100%}
+.collections .type1 .art .photo  img{width: 250px;height: auto;filter: saturate(0) contrast(1.1) brightness(0.9);z-index: 1;position: absolute;left: 5em;transition: filter 0.7s ease;}
+.collections .art .photo img:hover{filter: none;}
+.collections .type1 .art .photo .name{font-size: 35px;font-family: rock-r;position: absolute;z-index: 2;top: 50%;transform: translateY(-50%);}
+.collections .type1 .text{padding: 3em;text-align: right}
+.collections .type1 .text p{font-size: 17px;border-right:2px #fff solid ; padding-right: 10px}
+.collections .type1 .details{right: 3em}
+
+
+.collections .type2 .art .photo  img{width: 250px;height: auto;filter: saturate(0) contrast(1.1) brightness(0.9);z-index: 1;position: absolute;right: 5em;transition: filter 0.7s ease;}
+.collections .type2 .art .photo img:hover{filter: none;}
+.collections .type2 .art .photo .name{font-size: 35px;font-family: rock-r;position: absolute;z-index: 2;top: 50%;transform: translateY(-50%);right: 0;text-align: right;}
+.collections .type2 .text{padding: 3em;}
+.collections .type2 .text p{font-size: 17px ;border-left: 2px #fff solid ; padding-left: 10px}
+.collections .details{position: absolute;font-family: robo-l;font-size: 13px;border-radius: 60px}
+.collections .details:hover{color: #070707}
+
+
+
+
+.creator .signature{margin: auto;margin: 1em 0}
+.creator .signature img{width: 120px;margin: auto;display: block;}
+
+.creator .text{text-align: center;font-size: 13px;color: #999;margin-bottom: 3em}
+.creator .social-logos{margin:auto;width: fit-content}
+.creator .social-logos ul{padding:0;}
+.creator .social-logos .list-item{font-size: 26px;margin:0 1em;float: left;}
+.creator .social-logos .list-item i{color: #888}
+
+
+
+
+/*SETTİNGS*/
+
+.themex{font-family: robo-t;color: #fff;padding:7em 0;position: relative;}
+.themex .subject{margin-left: 5em;width: fit-content;margin-bottom: 5em}
+.themex .subject .title{letter-spacing: 9px;font-size: 25px;margin: 0}
+.themex .subject p{margin: 0;font-family: robo-r;font-size: 15px;color: #555;text-align: right;letter-spacing: 3px}
+.themex .side-strip{position: absolute;top: 10em;right: 0.5em;font-size:25px;transform: rotate(90deg);color: #fff;letter-spacing: 4px;}
+
+
+
+
+.behindtext{position: absolute;right: -20em;top: 0 }
+.behindtext .text{display: inline-flex;font-size: 600px;color: #fff; opacity: 0.02;font-family:robo-r;}
+
+
+
+
+
+
+
+
+/*About*/
+.about .sect .speech{ text-align: right;}
+
+.about .sect .image img{
+  width: 80%;height: auto;margin-left: auto;margin-left: 20%;
+}
+.about .sect .image .side-strip-lines{width: 50px;height: 50px;position: absolute;z-index: 2;left:5em
+  ;}
+
+.side-strip-lines{background-image:url("../images/tex.png");background-repeat: repeat;opacity: 1;}
